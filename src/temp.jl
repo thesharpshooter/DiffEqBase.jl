@@ -21,7 +21,7 @@ h = tmax/nsteps;
 u = u0;
 t = 0
 for k in 1:nsteps
-	u = expm(-h*A)*u + h*(expm(-h*A)-1)*((-h*A)^(-1))*g(t,u)
+	u = expm(-h*A)*u + h*((expm(-h*A)-1)\(-h*A))*g(t,u)
 	t = k*h
 	println("This is step",k)
 	println("U is : ",u)
